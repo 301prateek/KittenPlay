@@ -1,0 +1,112 @@
+.room{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    height: 98vh;
+    width:1200px;
+    margin-left: 60px;
+}
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    background-image: url(./images/playroom.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.image{
+    margin-top: 85px;
+    height: 200px;
+    transform: translate(479px,-250px);
+    position: absolute;
+}
+
+.chair{
+    display: flex;
+    /* width: 400px;
+    height: 400px; */
+    transform: translate(415px,50px);
+    position: absolute;
+}
+
+.cat{
+    transform: translate(510px,10px);
+    position: relative;
+    animation-name: cat;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cat{
+    0%   {left:0px; top: 0px;} 
+    25%  {left:70px; top:0px;} 
+}
+
+.carpet{
+    transform: translate(300px,230px) rotateX(75deg);
+    position: absolute;
+}
+
+.pillow{
+    transform: translate(350px,250px);
+    position: absolute;
+}
+
+.ball1{
+    transform: translate(700px,260px);
+    position: absolute;
+}
+
+.ball2{
+    transform: translate(400px,190px);
+    position: absolute;
+}
+
+.ball3{
+    transform: translate(800px,180px);
+    position: absolute;
+}
+
+.button{
+    transform: translate(-684px,500px);
+    position: absolute;
+    background-color: orange;
+    width: 150px;
+    height: 50px;
+    font-size: large;
+    color: black;
+    border-radius: 25px;
+    outline: none;
+}
+
+.play-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(./images/play-button.svg);
+    transform: translate(940px,80px);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: large;
+    color: black;
+    border-radius: 25px;
+    outline: none;
+}
+
+.exit-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transform: translate(-192px,80px);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: large;
+    color: black;
+    border-radius: 25px;
+    outline: none;
+}
